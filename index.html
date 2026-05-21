@@ -129,39 +129,49 @@
 			<div class="row">
 				<div class="col-md-6">
 					<form action="https://formsubmit.co/josemanuelbonillagarcia@gmail.com" method="POST">
+
 						<input type="hidden" name="_captcha" value="false">
 						<input type="hidden" name="_next" value="https://joseman72.github.io/jmbonilla/">
+						<input type="hidden" name="_subject" value="Nuevo mensaje desde el portfolio">
+						<input type="hidden" name="_template" value="table">
+						<input type="hidden" name="_autoresponse" value="Gracias por contactar. Te responderé pronto.">
+
+						<input type="text" name="_honey" style="display:none">
+
 						<div class="mb-3">
 							<label class="form-label">Nombre</label>
 							<input 
-								type="text" 
+								type="text"
 								name="nombre"
-								class="form-control" 
+								class="form-control"
 								placeholder="Tu nombre"
 								required
 							>
 						</div>
+
 						<div class="mb-3">
 							<label class="form-label">Correo</label>
 							<input 
-								type="email" 
-								name="email"
-								class="form-control" 
+								type="email"
+								name="_replyto"
+								class="form-control"
 								placeholder="tu@correo.com"
 								required
 							>
 						</div>
+
 						<div class="mb-3">
 							<label class="form-label">Mensaje</label>
-							<textarea 
+							<textarea
 								name="mensaje"
-								class="form-control" 
-								rows="4" 
+								class="form-control"
+								rows="4"
 								placeholder="Descripción breve del proyecto"
 								required
 							></textarea>
 						</div>
-						<button type="submit" class="btn btn-primary">
+
+						<button type="submit" class="btn btn-primary w-100">
 							Enviar
 						</button>
 
