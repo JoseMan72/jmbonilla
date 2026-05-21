@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>José Manuel Bonilla García - Portfolio</title>
+	<meta name="description" content="Portfolio de José Manuel Bonilla García - Desarrollador Web Full Stack. Tecnologías: Git, PHP, Java, HTML, CSS, Bootstrap, Laravel, Python, Django, Bases de datos.">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		:root{--accent:#0d6efd}
+		body{font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; line-height:1.6}
+		.hero{background: linear-gradient(90deg, rgba(13,110,253,0.08), rgba(13,110,253,0.02)); padding:4rem 0}
+		.skill-badge{margin:0.15rem}
+		.project-card{transition:transform .15s ease}
+		.project-card:hover{transform:translateY(-6px)}
+	</style>
+</head>
+<body>
+	<header class="bg-white shadow-sm">
+		<nav class="container d-flex justify-content-between align-items-center py-3">
+			<a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+				<span class="fw-bold me-2">José Manuel</span>
+				<small class="text-muted">Bonilla García</small>
+			</a>
+			<ul class="nav">
+				<li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+				<li class="nav-item"><a class="nav-link" href="#skills">Tecnologías</a></li>
+				<li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+				<li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="container">
+		<section class="hero text-center mt-4">
+			<div class="row align-items-center">
+				<div class="col-lg-8 mx-auto">
+					<h1 class="display-5 fw-bold">José Manuel Bonilla García</h1>
+					<p class="lead text-muted">Desarrollador Web Full Stack — experiencia en crear aplicaciones robustas y escalables con tecnologías modernas.</p>
+					<p>
+						<a href="#projects" class="btn btn-primary me-2">Ver proyectos</a>
+						<a href="#contact" class="btn btn-outline-primary">Contactar</a>
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="about" class="my-5">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="bg-light p-4 rounded text-center">
+						<img src="https://via.placeholder.com/150" alt="Foto José Manuel" class="rounded-circle mb-3">
+						<h5 class="mb-0">José Manuel</h5>
+						<small class="text-muted">Desarrollador Web Full Stack</small>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<h2>Sobre mí</h2>
+					<p>Soy desarrollador Full Stack con experiencia en proyectos web de diversa escala: desde páginas institucionales hasta aplicaciones con arquitecturas modernas y API REST. Me especializo en backend con PHP (Laravel) y Python (Django), así como en frontend con HTML, CSS y Bootstrap.</p>
+					<p>Poseo experiencia en control de versiones con Git, bases de datos relacionales (MySQL, PostgreSQL) y en el ciclo completo de desarrollo: diseño, implementación, pruebas y despliegue.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="skills" class="my-5">
+			<h2>Tecnologías y habilidades</h2>
+			<p class="text-muted">Algunas de las tecnologías con las que trabajo con frecuencia:</p>
+			<div class="d-flex flex-wrap">
+				<span class="badge bg-primary skill-badge">Git</span>
+				<span class="badge bg-primary skill-badge">PHP</span>
+				<span class="badge bg-primary skill-badge">Laravel</span>
+				<span class="badge bg-primary skill-badge">Java</span>
+				<span class="badge bg-primary skill-badge">Python</span>
+				<span class="badge bg-primary skill-badge">Django</span>
+				<span class="badge bg-primary skill-badge">HTML</span>
+				<span class="badge bg-primary skill-badge">CSS</span>
+				<span class="badge bg-primary skill-badge">Bootstrap</span>
+				<span class="badge bg-primary skill-badge">Bases de datos (MySQL, PostgreSQL)</span>
+				<span class="badge bg-primary skill-badge">APIs REST</span>
+				<span class="badge bg-primary skill-badge">Testing</span>
+			</div>
+		</section>
+
+		<section id="projects" class="my-5">
+			<h2>Proyectos destacados</h2>
+			<div class="row gy-4 mt-2">
+				<div class="col-md-6">
+					<article class="card project-card h-100">
+						<div class="card-body">
+							<h5 class="card-title">Gestor de contenidos (Laravel)</h5>
+							<p class="card-text text-muted">Plataforma CMS desarrollada con Laravel para gestión de contenidos y usuarios, con panel de administración y API REST.</p>
+							<p class="mb-0"><small class="text-muted">Tecnologías: PHP, Laravel, MySQL, Bootstrap</small></p>
+						</div>
+					</article>
+				</div>
+				<div class="col-md-6">
+					<article class="card project-card h-100">
+						<div class="card-body">
+							<h5 class="card-title">Aplicación e-commerce (Django)</h5>
+							<p class="card-text text-muted">Tienda online con carrito, pasarela de pago y panel de administración. Integración con servicios externos.</p>
+							<p class="mb-0"><small class="text-muted">Tecnologías: Python, Django, PostgreSQL, Bootstrap</small></p>
+						</div>
+					</article>
+				</div>
+				<div class="col-md-6">
+					<article class="card project-card h-100">
+						<div class="card-body">
+							<h5 class="card-title">API de servicios (Java)</h5>
+							<p class="card-text text-muted">Microservicio RESTful desarrollado en Java para gestión de recursos y autenticación.</p>
+							<p class="mb-0"><small class="text-muted">Tecnologías: Java, Spring Boot, JWT</small></p>
+						</div>
+					</article>
+				</div>
+				<div class="col-md-6">
+					<article class="card project-card h-100">
+						<div class="card-body">
+							<h5 class="card-title">Portales y landing pages</h5>
+							<p class="card-text text-muted">Diseño y maquetación responsiva con HTML, CSS y Bootstrap para campañas y presentación de servicios.</p>
+							<p class="mb-0"><small class="text-muted">Tecnologías: HTML, CSS, Bootstrap</small></p>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" class="my-5">
+			<h2>Contacto</h2>
+			<p class="text-muted">¿Interesado en colaborar o contratar mis servicios? Escríbeme:</p>
+			<div class="row">
+				<div class="col-md-6">
+					<form>
+						<div class="mb-3">
+							<label class="form-label">Nombre</label>
+							<input type="text" class="form-control" placeholder="Tu nombre">
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Correo</label>
+							<input type="email" class="form-control" placeholder="tu@correo.com">
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Mensaje</label>
+							<textarea class="form-control" rows="4" placeholder="Descripción breve del proyecto"></textarea>
+						</div>
+						<button class="btn btn-primary">Enviar</button>
+					</form>
+				</div>
+				<div class="col-md-6">
+					<ul class="list-unstyled">
+						<li><strong>Email:</strong> josemanuel@example.com</li>
+						<li><strong>Ubicación:</strong> España</li>
+						<li><strong>Disponibilidad:</strong> Contrato</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="bg-light py-4 mt-5">
+		<div class="container d-flex justify-content-between align-items-center">
+			<small class="text-muted">© José Manuel Bonilla García</small>
+			<div>
+				<a href="#" class="text-muted me-3">GitHub</a>
+				<a href="#" class="text-muted">LinkedIn</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
