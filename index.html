@@ -1,203 +1,530 @@
 <!doctype html>
 <html lang="es">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>José Manuel Bonilla García - Portfolio</title>
-	<meta name="description" content="Portfolio de José Manuel Bonilla García - Desarrollador Web Full Stack. Tecnologías: Git, PHP, Java, HTML, CSS, Bootstrap, Laravel, Python, Django, Bases de datos.">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-	<style>
-		:root{--accent:#0d6efd}
-		body{font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; line-height:1.6}
-		.hero{background: linear-gradient(90deg, rgba(13,110,253,0.08), rgba(13,110,253,0.02)); padding:4rem 0}
-		.skill-badge{margin:0.15rem}
-		.project-card{transition:transform .15s ease}
-		.project-card:hover{transform:translateY(-6px)}
-	</style>
-</head>
-<body>
-	<header class="bg-white shadow-sm">
-		<nav class="container d-flex justify-content-between align-items-center py-3">
-			<a href="#" class="text-decoration-none text-dark d-flex align-items-center">
-				<span class="fw-bold me-2">José Manuel</span>
-				<small class="text-muted">Bonilla García</small>
-			</a>
-			<ul class="nav">
-				<li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
-				<li class="nav-item"><a class="nav-link" href="#skills">Tecnologías</a></li>
-				<li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
-				<li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
-			</ul>
-		</nav>
-	</header>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>José Manuel Bonilla García - Portfolio</title>
+        <meta
+            name="description"
+            content="Portfolio de José Manuel Bonilla García - Desarrollador Web Full Stack. Tecnologías: Git, PHP, Java, HTML, CSS, Bootstrap, Laravel, Python, Django, Bases de datos."
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <style>
+            :root {
+                --accent: #0d6efd;
+            }
+            body {
+                font-family:
+                    system-ui,
+                    -apple-system,
+                    "Segoe UI",
+                    Roboto,
+                    "Helvetica Neue",
+                    Arial;
+                line-height: 1.6;
+            }
+            .hero {
+                background: linear-gradient(
+                    90deg,
+                    rgba(13, 110, 253, 0.08),
+                    rgba(13, 110, 253, 0.02)
+                );
+                padding: 4rem 0;
+            }
+            .skill-badge {
+                margin: 0.15rem;
+            }
+            .project-card {
+                transition: transform 0.15s ease;
+            }
+            .project-card:hover {
+                transform: translateY(-6px);
+            }
+            .card {
+                border: none;
+                box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.08);
+                border-radius: 1rem;
+            }
+            section {
+                scroll-margin-top: 90px;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="bg-white shadow-sm">
+            <nav
+                class="container d-flex justify-content-between align-items-center py-3"
+            >
+                <a
+                    href="#"
+                    class="text-decoration-none text-dark d-flex align-items-center"
+                >
+                    <span class="fw-bold me-2">José Manuel</span>
+                    <small class="text-muted">Bonilla García</small>
+                </a>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Tecnologías</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-	<main class="container">
-		<section class="hero text-center mt-4">
-			<div class="row align-items-center">
-				<div class="col-lg-8 mx-auto">
-					<h1 class="display-5 fw-bold">José Manuel Bonilla García</h1>
-					<p class="lead text-muted">Desarrollador Web Full Stack — experiencia en crear aplicaciones robustas y escalables con tecnologías modernas.</p>
-					<p>
-						<a href="#projects" class="btn btn-primary me-2">Ver proyectos</a>
-						<a href="#contact" class="btn btn-outline-primary">Contactar</a>
-					</p>
-				</div>
-			</div>
-		</section>
+        <main class="container">
+            <section class="hero text-center mt-4">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 mx-auto">
+                        <h1 class="display-5 fw-bold">
+                            José Manuel Bonilla García
+                        </h1>
+                        <p class="lead text-muted">
+                            Desarrollador Web Full Stack — experiencia en crear
+                            aplicaciones robustas y escalables con tecnologías
+                            modernas.
+                        </p>
+                        <p>
+                            <a href="#projects" class="btn btn-primary me-2"
+                                >Ver proyectos</a
+                            >
+                            <a href="#contact" class="btn btn-outline-primary"
+                                >Contactar</a
+                            >
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-		<section id="about" class="my-5">
-			<div class="row">
-				<div class="col-md-4">
-					<div class="bg-light p-4 rounded text-center">
-						<img src="img/FotoPerfil.jpg" alt="Foto José Manuel" width="250" height="250" class="rounded-circle object-fit-cover mb-3">
-						<h5 class="mb-0">José Manuel</h5>
-						<small class="text-muted">Desarrollador Web Full Stack</small>
-					</div>
-				</div>
-				<div class="col-md-8">
-					<h2>Sobre mí</h2>
-					<p>Soy desarrollador Full Stack con experiencia en proyectos web de diversa escala: desde páginas institucionales hasta aplicaciones con arquitecturas modernas y API REST. Me especializo en backend con PHP (Laravel) y Python (Django), así como en frontend con HTML, CSS y Bootstrap.</p>
-					<p>Poseo experiencia en control de versiones con Git, bases de datos relacionales (MySQL, PostgreSQL) y en el ciclo completo de desarrollo: diseño, implementación, pruebas y despliegue.</p>
-				</div>
-			</div>
-		</section>
+            <section id="about" class="my-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="bg-light p-4 rounded text-center">
+                            <img
+                                src="img/FotoPerfil.jpg"
+                                alt="Foto José Manuel"
+                                width="250"
+                                height="250"
+                                class="rounded-circle object-fit-cover mb-3"
+                            />
+                            <h5 class="mb-0">José Manuel</h5>
+                            <small class="text-muted"
+                                >Desarrollador Web Full Stack</small
+                            >
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <h2>Sobre mí</h2>
+                        <p>
+                            Soy desarrollador web Full Stack especializado en
+                            entornos e-commerce y aplicaciones empresariales.
+                            Tengo experiencia trabajando con tecnologías como
+                            PHP, Laravel, Prestashop, Shopify y bases de datos
+                            MySQL, desarrollando soluciones reales para tiendas
+                            online, ERPs y conexiones mediante APIs.
+                        </p>
 
-		<section id="skills" class="my-5">
-			<h2>Tecnologías y habilidades</h2>
-			<p class="text-muted">Algunas de las tecnologías con las que trabajo con frecuencia:</p>
-			<div class="d-flex flex-wrap">
-				<span class="badge bg-primary skill-badge">Git</span>
-				<span class="badge bg-primary skill-badge">PHP</span>
-				<span class="badge bg-primary skill-badge">Laravel</span>
-				<span class="badge bg-primary skill-badge">Java</span>
-				<span class="badge bg-primary skill-badge">Python</span>
-				<span class="badge bg-primary skill-badge">Django</span>
-				<span class="badge bg-primary skill-badge">HTML</span>
-				<span class="badge bg-primary skill-badge">CSS</span>
-				<span class="badge bg-primary skill-badge">Bootstrap</span>
-				<span class="badge bg-primary skill-badge">Bases de datos (MySQL, PostgreSQL)</span>
-				<span class="badge bg-primary skill-badge">APIs REST</span>
-				<span class="badge bg-primary skill-badge">Testing</span>
-			</div>
-		</section>
+                        <p>
+                            He participado tanto en el desarrollo backend como
+                            frontend de proyectos en producción, creando módulos
+                            personalizados, integraciones con marketplaces y
+                            herramientas orientadas a optimizar procesos
+                            internos y automatizar flujos de trabajo. También
+                            tengo experiencia trabajando con Git, Bootstrap y
+                            arquitecturas REST.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-		<section id="projects" class="my-5">
-			<h2>Proyectos destacados</h2>
-			<div class="row gy-4 mt-2">
-				<div class="col-md-6">
-					<article class="card project-card h-100">
-						<div class="card-body">
-							<h5 class="card-title">Gestor de contenidos (Laravel)</h5>
-							<p class="card-text text-muted">Plataforma CMS desarrollada con Laravel para gestión de contenidos y usuarios, con panel de administración y API REST.</p>
-							<p class="mb-0"><small class="text-muted">Tecnologías: PHP, Laravel, MySQL, Bootstrap</small></p>
-						</div>
-					</article>
-				</div>
-				<div class="col-md-6">
-					<article class="card project-card h-100">
-						<div class="card-body">
-							<h5 class="card-title">Aplicación e-commerce (Django)</h5>
-							<p class="card-text text-muted">Tienda online con carrito, pasarela de pago y panel de administración. Integración con servicios externos.</p>
-							<p class="mb-0"><small class="text-muted">Tecnologías: Python, Django, PostgreSQL, Bootstrap</small></p>
-						</div>
-					</article>
-				</div>
-				<div class="col-md-6">
-					<article class="card project-card h-100">
-						<div class="card-body">
-							<h5 class="card-title">API de servicios (Java)</h5>
-							<p class="card-text text-muted">Microservicio RESTful desarrollado en Java para gestión de recursos y autenticación.</p>
-							<p class="mb-0"><small class="text-muted">Tecnologías: Java, Spring Boot, JWT</small></p>
-						</div>
-					</article>
-				</div>
-				<div class="col-md-6">
-					<article class="card project-card h-100">
-						<div class="card-body">
-							<h5 class="card-title">Portales y landing pages</h5>
-							<p class="card-text text-muted">Diseño y maquetación responsiva con HTML, CSS y Bootstrap para campañas y presentación de servicios.</p>
-							<p class="mb-0"><small class="text-muted">Tecnologías: HTML, CSS, Bootstrap</small></p>
-						</div>
-					</article>
-				</div>
-			</div>
-		</section>
+            <section id="experience" class="my-5">
+                <h2>Experiencia profesional</h2>
 
-		<section id="contact" class="my-5">
-			<h2>Contacto</h2>
-			<p class="text-muted">¿Interesado en colaborar o contratar mis servicios? Escríbeme:</p>
-			<div class="row">
-				<div class="col-md-6">
-					<form action="https://formsubmit.co/josemanuelbonillagarcia@gmail.com" method="POST">
+                <div class="row gy-4 mt-2">
+                    <div class="col-12">
+                        <article class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <div
+                                    class="d-flex justify-content-between flex-wrap"
+                                >
+                                    <div>
+                                        <h4 class="mb-1">
+                                            Desarrollador Web Full Stack
+                                        </h4>
+                                        <h6 class="text-primary mb-2">
+                                            Gaulan Interiors S.L.
+                                        </h6>
+                                    </div>
 
-						<input type="hidden" name="_captcha" value="false">
-						<input type="hidden" name="_next" value="https://joseman72.github.io/jmbonilla/">
-						<input type="hidden" name="_subject" value="Nuevo mensaje desde el portfolio">
-						<input type="hidden" name="_template" value="table">
-						<!--<input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> Esto te manda a otra vista para dar las gracias-->
+                                    <small class="text-muted">
+                                        Febrero 2025 - Mayo 2026
+                                    </small>
+                                </div>
 
-						<input type="text" name="_honey" style="display:none">
+                                <p class="text-muted">
+                                    Responsable del desarrollo y mantenimiento
+                                    de la tienda online en Prestashop y del ERP
+                                    interno basado en Laravel.
+                                </p>
 
-						<div class="mb-3">
-							<label class="form-label">Nombre</label>
-							<input 
-								type="text"
-								name="nombre"
-								class="form-control"
-								placeholder="Tu nombre"
-								required
-							>
-						</div>
+                                <ul>
+                                    <li>
+                                        Desarrollo de módulos personalizados
+                                        para Prestashop tanto para front-office
+                                        como back-office.
+                                    </li>
+                                    <li>
+                                        Implementación de integraciones
+                                        logísticas y automatización de procesos
+                                        con transportistas.
+                                    </li>
+                                    <li>
+                                        Gestión y mantenimiento del ERP propio
+                                        desarrollado con Laravel y MySQL.
+                                    </li>
+                                    <li>
+                                        Sincronización de catálogo y stock con
+                                        marketplaces como Amazon, Leroy Merlin,
+                                        Carrefour, Miravia y otros.
+                                    </li>
+                                    <li>
+                                        Integración y mantenimiento de APIs
+                                        externas para automatización y conexión
+                                        entre plataformas.
+                                    </li>
+                                </ul>
 
-						<div class="mb-3">
-							<label class="form-label">Correo</label>
-							<input 
-								type="email"
-								name="email"
-								class="form-control"
-								placeholder="tu@correo.com"
-								required
-							>
-						</div>
+                                <p class="mb-0">
+                                    <small class="text-muted">
+                                        Tecnologías: PHP, Laravel, Prestashop,
+                                        MySQL, APIs REST, Bootstrap, Git
+                                    </small>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
 
-						<div class="mb-3">
-							<label class="form-label">Mensaje</label>
-							<textarea
-								name="mensaje"
-								class="form-control"
-								rows="4"
-								placeholder="Descripción breve del proyecto"
-								required
-							></textarea>
-						</div>
+                    <div class="col-12">
+                        <article class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <div
+                                    class="d-flex justify-content-between flex-wrap"
+                                >
+                                    <div>
+                                        <h4 class="mb-1">
+                                            Prácticas DAW — Desarrollo Web
+                                        </h4>
+                                        <h6 class="text-primary mb-2">
+                                            Farmacias Direct
+                                        </h6>
+                                    </div>
 
-						<button type="submit" class="btn btn-primary w-100">
-							Enviar
-						</button>
+                                    <small class="text-muted">
+                                        Marzo 2024 - Junio 2024
+                                    </small>
+                                </div>
 
-					</form>
-				</div>
-				<div class="col-md-6">
-					<ul class="list-unstyled">
-						<li><strong>Email:</strong> josemanuelbonillagarcia@gmail.com</li>
-						<li><strong>Ubicación:</strong> Sevilla/España</li>
-						<li><strong>Disponibilidad:</strong> Contrato</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-	</main>
+								<img src="img/FarmaciasDirect.png" alt="Farmacias Direct logo" class="float-end ms-3 mb-2" width="120" />
 
-	<footer class="bg-light py-4 mt-5">
-		<div class="container d-flex justify-content-between align-items-center">
-			<small class="text-muted">© José Manuel Bonilla García</small>
-			<div>
-				<a href="https://github.com/JoseMan72" target="_blank" class="text-muted me-3">GitHub</a>
-				<a href="https://www.linkedin.com/in/jose-manuel-bonilla-garcia" target="_blank" class="text-muted">LinkedIn</a>
-			</div>
-		</div>
-	</footer>
+                                <p class="text-muted">
+                                    Formé parte del equipo IT participando en
+                                    proyectos reales relacionados con
+                                    e-commerce, integraciones y mantenimiento de
+                                    plataformas empresariales.
+                                </p>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+                                <ul>
+                                    <li>
+                                        Desarrollo backend con Laravel y MySQL.
+                                    </li>
+                                    <li>
+                                        Personalización y modificación de
+                                        plantillas Liquid en Shopify.
+                                    </li>
+                                    <li>
+                                        Creación y mantenimiento de conexiones
+                                        API entre plataformas empresariales.
+                                    </li>
+                                    <li>
+                                        Participación en integraciones entre
+                                        Laravel, Shopify y ERP basado en Odoo.
+                                    </li>
+                                    <li>
+                                        Desarrollo frontend utilizando HTML,
+                                        CSS, Tailwind CSS y Bootstrap.
+                                    </li>
+                                </ul>
+
+                                <p class="mb-0">
+                                    <small class="text-muted">
+                                        Tecnologías: Laravel, PHP, Shopify,
+                                        Liquid, MySQL, APIs REST, Bootstrap
+                                    </small>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="my-5">
+                <h2>Tecnologías y habilidades</h2>
+                <p class="text-muted">
+                    Algunas de las tecnologías con las que trabajo con
+                    frecuencia:
+                </p>
+                <div class="d-flex flex-wrap">
+                    <span class="badge bg-primary skill-badge">Git</span>
+                    <span class="badge bg-primary skill-badge">PHP</span>
+                    <span class="badge bg-primary skill-badge">Laravel</span>
+                    <span class="badge bg-primary skill-badge">Java</span>
+                    <span class="badge bg-primary skill-badge">Python</span>
+                    <span class="badge bg-primary skill-badge">Django</span>
+                    <span class="badge bg-primary skill-badge">HTML</span>
+                    <span class="badge bg-primary skill-badge">CSS</span>
+                    <span class="badge bg-primary skill-badge">Bootstrap</span>
+                    <span class="badge bg-primary skill-badge"
+                        >Bases de datos (MySQL, PostgreSQL)</span
+                    >
+                    <span class="badge bg-primary skill-badge">APIs REST</span>
+                    <span class="badge bg-primary skill-badge">Testing</span>
+                    <span class="badge bg-primary skill-badge">Prestashop</span>
+                    <span class="badge bg-primary skill-badge">Shopify</span>
+                    <span class="badge bg-primary skill-badge">Liquid</span>
+                    <span class="badge bg-primary skill-badge"
+                        >Tailwind CSS</span
+                    >
+                    <span class="badge bg-primary skill-badge">MySQL</span>
+                    <span class="badge bg-primary skill-badge">Odoo</span>
+                    <span class="badge bg-primary skill-badge"
+                        >Marketplace Integrations</span
+                    >
+                </div>
+            </section>
+
+            <section id="projects" class="my-5">
+                <h2>Proyectos y desarrollos destacados</h2>
+
+                <div class="row gy-4 mt-2">
+                    <div class="col-md-6">
+                        <article class="card project-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Módulos personalizados para Prestashop
+                                </h5>
+
+                                <p class="card-text text-muted">
+                                    Desarrollo de módulos a medida para
+                                    optimizar procesos administrativos,
+                                    logísticos y funcionalidades del front-end
+                                    en e-commerce.
+                                </p>
+
+                                <p class="mb-0">
+                                    <small class="text-muted">
+                                        PHP, Prestashop, MySQL, Bootstrap
+                                    </small>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6">
+                        <article class="card project-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Integraciones API y automatización
+                                </h5>
+
+                                <p class="card-text text-muted">
+                                    Desarrollo de integraciones entre ERP,
+                                    marketplaces y plataformas e-commerce
+                                    mediante APIs REST para automatizar procesos
+                                    y sincronización de datos.
+                                </p>
+
+                                <p class="mb-0">
+                                    <small class="text-muted">
+                                        Laravel, APIs REST, MySQL, PHP
+                                    </small>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6">
+                        <article class="card project-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Gestión multicanal de marketplaces
+                                </h5>
+
+                                <p class="card-text text-muted">
+                                    Sincronización y mantenimiento de catálogo
+                                    en Amazon, Leroy Merlin, Carrefour, Miravia
+                                    y otras plataformas de venta online.
+                                </p>
+
+                                <p class="mb-0">
+                                    <small class="text-muted">
+                                        Shopping Feed, APIs, Marketplaces
+                                    </small>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6">
+                        <article class="card project-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Personalización Shopify
+                                </h5>
+
+                                <p class="card-text text-muted">
+                                    Modificación de plantillas Liquid y
+                                    adaptación de funcionalidades en tiendas
+                                    Shopify para proyectos reales de e-commerce.
+                                </p>
+
+                                <p class="mb-0">
+                                    <small class="text-muted">
+                                        Shopify, Liquid, HTML, CSS
+                                    </small>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="my-5">
+                <h2>Contacto</h2>
+                <p class="text-muted">
+                    ¿Interesado en colaborar o contratar mis servicios?
+                    Escríbeme:
+                </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <form
+                            action="https://formsubmit.co/josemanuelbonillagarcia@gmail.com"
+                            method="POST"
+                        >
+                            <input
+                                type="hidden"
+                                name="_captcha"
+                                value="false"
+                            />
+                            <input
+                                type="hidden"
+                                name="_next"
+                                value="https://joseman72.github.io/jmbonilla/"
+                            />
+                            <input
+                                type="hidden"
+                                name="_subject"
+                                value="Nuevo mensaje desde el portfolio"
+                            />
+                            <input
+                                type="hidden"
+                                name="_template"
+                                value="table"
+                            />
+                            <!--<input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> Esto te manda a otra vista para dar las gracias-->
+
+                            <input
+                                type="text"
+                                name="_honey"
+                                style="display: none"
+                            />
+
+                            <div class="mb-3">
+                                <label class="form-label">Nombre</label>
+                                <input
+                                    type="text"
+                                    name="nombre"
+                                    class="form-control"
+                                    placeholder="Tu nombre"
+                                    required
+                                />
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Correo</label>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    class="form-control"
+                                    placeholder="tu@correo.com"
+                                    required
+                                />
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Mensaje</label>
+                                <textarea
+                                    name="mensaje"
+                                    class="form-control"
+                                    rows="4"
+                                    placeholder="Descripción breve del proyecto"
+                                    required
+                                ></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100">
+                                Enviar
+                            </button>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li>
+                                <strong>Email:</strong>
+                                josemanuelbonillagarcia@gmail.com
+                            </li>
+                            <li><strong>Ubicación:</strong> Sevilla/España</li>
+                            <li><strong>Disponibilidad:</strong> Contrato</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-light py-4 mt-5">
+            <div
+                class="container d-flex justify-content-between align-items-center"
+            >
+                <small class="text-muted">© José Manuel Bonilla García</small>
+                <div>
+                    <a
+                        href="https://github.com/JoseMan72"
+                        target="_blank"
+                        class="text-muted me-3"
+                        >GitHub</a
+                    >
+                    <a
+                        href="https://www.linkedin.com/in/jose-manuel-bonilla-garcia"
+                        target="_blank"
+                        class="text-muted"
+                        >LinkedIn</a
+                    >
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>
